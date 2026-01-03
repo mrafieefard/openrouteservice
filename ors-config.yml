@@ -2,14 +2,37 @@
 ### Minimal configuration example file for openrouteservice. For a description please visit: ###
 ### https://giscience.github.io/openrouteservice/run-instance/configuration/                 ###
 ################################################################################################
+
 ors:
   engine:
     profile_default:
-      build:
-        source_file: ors-api/src/test/files/heidelberg.test.pbf
+      enabled: true
+
     profiles:
-      driving-car:
+      cycling-regular:
         enabled: true
+      cycling-road:
+        enabled: true
+      cycling-mountain:
+        enabled: false
+      driving-car:
+        enabled: false
+      foot-walking:
+        enabled: false
+
+    data:
+      osm:
+        file: /pbf/netherland.osm.pbf
+
+
+# ors:
+#   engine:
+#     profile_default:
+#       build:
+#         source_file: ors-api/src/test/files/heidelberg.test.pbf
+#     profiles:
+#       driving-car:
+#         enabled: true
 
 ################################################################################
 ### Configuration file for openrouteservice. For a description please visit: ###
