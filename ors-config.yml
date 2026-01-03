@@ -6,23 +6,17 @@
 ors:
   engine:
     profile_default:
-      enabled: true
+      source_file: /pbf/netherland.osm.pbf
 
     profiles:
       cycling-regular:
         enabled: true
       cycling-road:
         enabled: true
-      cycling-mountain:
-        enabled: false
       driving-car:
         enabled: false
       foot-walking:
         enabled: false
-
-    data:
-      osm:
-        file: /pbf/netherland.osm.pbf
 
 
 # ors:
